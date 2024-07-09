@@ -2,6 +2,7 @@ import React, { useEffect } from "react";
 import "./CartScreen.css";
 import { useSelector, useDispatch } from "react-redux";
 import { Link } from "react-router-dom";
+import Swal from "sweetalert2";
 
 import CartItem from "../components/CartItem";
 
@@ -21,11 +22,22 @@ const CartScreen = () => {
   };
 
   const getCartCount = () => {
-    return cartItems.reduce((qty, item) => Number(item.qty) + qty, 0);
+    return cartItems.reduce((totalQty, item) => totalQty + Number(item.qty), 0);
   };
 
   const getCartSubTotal = () => {
-    return cartItems.reduce((price, item) => item.price * item.qty + price, 0);
+    return cartItems.reduce(
+      (totalPrice, item) => totalPrice + Number(item.price) * item.qty,
+      0
+    );
+  };
+
+  const handleCheckoutClick = () => {
+    Swal.fire({
+      icon: "success",
+      title: "Sucesso!",
+      text: "Produto Comprado Com Sucesso!",
+    });
   };
 
   useEffect(() => {
@@ -56,10 +68,12 @@ const CartScreen = () => {
       <div className="cartscreen__right">
         <div className="cartscreen__info">
           <p>Subtotal ({getCartCount()}) itens</p>
-          <p>${getCartSubTotal().toFixed(2)}</p>
+          <p>R${getCartSubTotal().toFixed(2)}</p>
         </div>
         <div>
-          <button>Prosseguir para o Checkout</button>
+          <button onClick={handleCheckoutClick}>
+            Prosseguir para o Checkout
+          </button>
         </div>
       </div>
     </div>
