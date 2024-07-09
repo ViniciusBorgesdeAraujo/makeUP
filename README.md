@@ -1,52 +1,64 @@
-# Projeto E-commerce - Trilha Inicial FullStack Jr
+# MakeUP
 
-Este projeto de e-commerce foi desenvolvido como parte do desafio Trilha Inicial FullStack Jr, aplicado pelo [CodigoCerto](https://www.codigocertocoders.com.br/).
+Veja como ficou: [Live Site](https://mmakeup.netlify.app/)
 
-## Repositório do Projeto
+Este projeto é uma aplicação web para exibir produtos de maquiagem, onde os usuários podem escolher produtos, adicioná-los ao carrinho e excluí-los, utilizando uma API fake para simulação de dados.
 
-Você pode acessar o repositório do projeto no GitHub [aqui](https://github.com/ViniciusBorgesdeAraujo/TrilhaFullStackJR-JUN15-frontend).
+## Funcionalidades
 
-## Tecnologias Utilizadas
+- Listagem de produtos de maquiagem
+- Adicionar produtos ao carrinho
+- Alterar a quantidade de produtos no carrinho
+- Remover produtos do carrinho
+- Layout responsivo
 
-<div style="display: flex; align-items: center;">
-  <a href="https://skillicons.dev">
-    <img src="https://skillicons.dev/icons?i=react,redux,css,nodejs,express,mongodb" alt="My Skills" />
-  </a>
-  <img src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/axios/axios-plain.svg" alt="Axios" style="width: 40px; height: 40px; margin-left: 10px;" />
-</div>
+## Ferramentas e Tecnologias Utilizadas
 
-## Clonando o Projeto
+- **React**: Biblioteca JavaScript para construção de interfaces de usuário
+- **Redux**: Biblioteca para gerenciamento de estado
+- **Axios**: Biblioteca para realizar requisições HTTP
+- **React Router DOM**: Biblioteca para gerenciamento de rotas
+- **CSS**: Estilização do projeto
 
-Para clonar o projeto, execute o seguinte comando no seu terminal:
+## Como Baixar e Executar o Projeto
 
-```sh
-git clone https://github.com/ViniciusBorgesdeAraujo/TrilhaFullStackJR-JUN15.git
+### Clonar o Repositório
+
+```bash
+git clone https://github.com/ViniciusBorgesdeAraujo/makeUP.git
+cd makeUP
 ```
 
-## Executando o Projeto
+### Instalar as Dependências
 
-### Ambiente de Desenvolvimento
+```bash
+npm install
+```
 
-Para iniciar o ambiente de desenvolvimento, execute o comando:
+### Executar o Projeto
 
-```sh
+```bash
 npm start
 ```
 
-### Servidor Backend
+O projeto será executado no endereço [http://localhost:3000](http://localhost:3000).
 
-Para iniciar o servidor backend, execute o comando:
+## Estrutura de Pastas
 
-```sh
-npm start
-```
+- `src/components`: Componentes reutilizáveis do projeto
+- `src/redux`: Configurações e ações do Redux
+- `src/screens`: Páginas do projeto
+- `src/assets`: Imagens e outros recursos estáticos
 
-## Funcionalidades Implementadas
+## API
 
-- Listagem de produtos
-- Detalhes dos produtos
-- Carrinho de compras
+Os dados dos produtos são obtidos de uma API fake utilizando o [Dummy JSON](https://dummyjson.com).
 
 ## Licença
 
-Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](https://opensource.org/licenses/MIT) para mais detalhes.
+Este projeto está licenciado sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+https://github.com/ViniciusBorgesdeAraujo/makeUP/assets/105869015/7a07cd29-c46c-4b3e-b7cc-35f617589574
+
+
+
